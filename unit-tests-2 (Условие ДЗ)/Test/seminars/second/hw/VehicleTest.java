@@ -3,6 +3,7 @@ package seminars.second.hw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.ClassBasedNavigableIterableAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -25,8 +26,8 @@ class VehicleTest {
     @Test
     public void testCarFourWheels(){
 //        Проверка утверждения
-//        assertThat(car.getNumWheels()).isEqualTo(4); // todo выдает ошибку нельзя int
-        assertEquals(car.getNumWheels(), 4);
+        assertThat(car.getNumWheels()).isEqualTo(4);
+//        assertEquals(car.getNumWheels(), 4);
     }
     @Test
     public void testMotorcycle(){
